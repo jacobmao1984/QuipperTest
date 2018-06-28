@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		533876A820E4D50700190E4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533876A720E4D50600190E4F /* AppDelegate.swift */; };
 		533876AA20E4D50700190E4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533876A920E4D50700190E4F /* ViewController.swift */; };
-		533876AD20E4D50700190E4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533876AB20E4D50700190E4F /* Main.storyboard */; };
 		533876AF20E4D50700190E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533876AE20E4D50700190E4F /* Assets.xcassets */; };
-		533876B220E4D50700190E4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533876B020E4D50700190E4F /* LaunchScreen.storyboard */; };
 		533876BD20E4D50700190E4F /* QuipperTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533876BC20E4D50700190E4F /* QuipperTestTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,9 +27,7 @@
 		533876A420E4D50600190E4F /* QuipperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuipperTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		533876A720E4D50600190E4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		533876A920E4D50700190E4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		533876AC20E4D50700190E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		533876AE20E4D50700190E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		533876B120E4D50700190E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		533876B320E4D50700190E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		533876B820E4D50700190E4F /* QuipperTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuipperTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		533876BC20E4D50700190E4F /* QuipperTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuipperTestTests.swift; sourceTree = "<group>"; };
@@ -79,9 +75,7 @@
 			children = (
 				533876A720E4D50600190E4F /* AppDelegate.swift */,
 				533876A920E4D50700190E4F /* ViewController.swift */,
-				533876AB20E4D50700190E4F /* Main.storyboard */,
 				533876AE20E4D50700190E4F /* Assets.xcassets */,
-				533876B020E4D50700190E4F /* LaunchScreen.storyboard */,
 				533876B320E4D50700190E4F /* Info.plist */,
 			);
 			path = QuipperTest;
@@ -177,9 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				533876B220E4D50700190E4F /* LaunchScreen.storyboard in Resources */,
 				533876AF20E4D50700190E4F /* Assets.xcassets in Resources */,
-				533876AD20E4D50700190E4F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,25 +211,6 @@
 			targetProxy = 533876B920E4D50700190E4F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		533876AB20E4D50700190E4F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				533876AC20E4D50700190E4F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		533876B020E4D50700190E4F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				533876B120E4D50700190E4F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		533876BF20E4D50700190E4F /* Debug */ = {
@@ -360,6 +333,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = QuipperTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,7 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JacobMao.QuipperTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -377,6 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = QuipperTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -384,7 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JacobMao.QuipperTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
