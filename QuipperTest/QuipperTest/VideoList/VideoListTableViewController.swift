@@ -9,6 +9,7 @@
 import UIKit
 
 class VideoListTableViewController: UITableViewController {
+    private var s: VideoListService?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,9 @@ class VideoListTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        s = VideoListService()
+        s?.fetchList { (v) in
+        }
     }
 
     override func didReceiveMemoryWarning() {
