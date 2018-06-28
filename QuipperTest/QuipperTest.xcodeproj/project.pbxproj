@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		533876A820E4D50700190E4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533876A720E4D50600190E4F /* AppDelegate.swift */; };
+		533876AA20E4D50700190E4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533876A920E4D50700190E4F /* ViewController.swift */; };
+		533876AD20E4D50700190E4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533876AB20E4D50700190E4F /* Main.storyboard */; };
+		533876AF20E4D50700190E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533876AE20E4D50700190E4F /* Assets.xcassets */; };
+		533876B220E4D50700190E4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533876B020E4D50700190E4F /* LaunchScreen.storyboard */; };
+		533876BD20E4D50700190E4F /* QuipperTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533876BC20E4D50700190E4F /* QuipperTestTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		533876B920E4D50700190E4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5338769C20E4D50600190E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 533876A320E4D50600190E4F;
+			remoteInfo = QuipperTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		533876A420E4D50600190E4F /* QuipperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuipperTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		533876A720E4D50600190E4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		533876A920E4D50700190E4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		533876AC20E4D50700190E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		533876AE20E4D50700190E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		533876B120E4D50700190E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		533876B320E4D50700190E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		533876B820E4D50700190E4F /* QuipperTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuipperTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		533876BC20E4D50700190E4F /* QuipperTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuipperTestTests.swift; sourceTree = "<group>"; };
+		533876BE20E4D50700190E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		533876A120E4D50600190E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533876B520E4D50700190E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5338769B20E4D50600190E4F = {
+			isa = PBXGroup;
+			children = (
+				533876A620E4D50600190E4F /* QuipperTest */,
+				533876BB20E4D50700190E4F /* QuipperTestTests */,
+				533876A520E4D50600190E4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		533876A520E4D50600190E4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				533876A420E4D50600190E4F /* QuipperTest.app */,
+				533876B820E4D50700190E4F /* QuipperTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		533876A620E4D50600190E4F /* QuipperTest */ = {
+			isa = PBXGroup;
+			children = (
+				533876A720E4D50600190E4F /* AppDelegate.swift */,
+				533876A920E4D50700190E4F /* ViewController.swift */,
+				533876AB20E4D50700190E4F /* Main.storyboard */,
+				533876AE20E4D50700190E4F /* Assets.xcassets */,
+				533876B020E4D50700190E4F /* LaunchScreen.storyboard */,
+				533876B320E4D50700190E4F /* Info.plist */,
+			);
+			path = QuipperTest;
+			sourceTree = "<group>";
+		};
+		533876BB20E4D50700190E4F /* QuipperTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				533876BC20E4D50700190E4F /* QuipperTestTests.swift */,
+				533876BE20E4D50700190E4F /* Info.plist */,
+			);
+			path = QuipperTestTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		533876A320E4D50600190E4F /* QuipperTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 533876C120E4D50700190E4F /* Build configuration list for PBXNativeTarget "QuipperTest" */;
+			buildPhases = (
+				533876A020E4D50600190E4F /* Sources */,
+				533876A120E4D50600190E4F /* Frameworks */,
+				533876A220E4D50600190E4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuipperTest;
+			productName = QuipperTest;
+			productReference = 533876A420E4D50600190E4F /* QuipperTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		533876B720E4D50700190E4F /* QuipperTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 533876C420E4D50700190E4F /* Build configuration list for PBXNativeTarget "QuipperTestTests" */;
+			buildPhases = (
+				533876B420E4D50700190E4F /* Sources */,
+				533876B520E4D50700190E4F /* Frameworks */,
+				533876B620E4D50700190E4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				533876BA20E4D50700190E4F /* PBXTargetDependency */,
+			);
+			name = QuipperTestTests;
+			productName = QuipperTestTests;
+			productReference = 533876B820E4D50700190E4F /* QuipperTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5338769C20E4D50600190E4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = JacobMao;
+				TargetAttributes = {
+					533876A320E4D50600190E4F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					533876B720E4D50700190E4F = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 533876A320E4D50600190E4F;
+					};
+				};
+			};
+			buildConfigurationList = 5338769F20E4D50600190E4F /* Build configuration list for PBXProject "QuipperTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5338769B20E4D50600190E4F;
+			productRefGroup = 533876A520E4D50600190E4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				533876A320E4D50600190E4F /* QuipperTest */,
+				533876B720E4D50700190E4F /* QuipperTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		533876A220E4D50600190E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533876B220E4D50700190E4F /* LaunchScreen.storyboard in Resources */,
+				533876AF20E4D50700190E4F /* Assets.xcassets in Resources */,
+				533876AD20E4D50700190E4F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533876B620E4D50700190E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		533876A020E4D50600190E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533876AA20E4D50700190E4F /* ViewController.swift in Sources */,
+				533876A820E4D50700190E4F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		533876B420E4D50700190E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533876BD20E4D50700190E4F /* QuipperTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		533876BA20E4D50700190E4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 533876A320E4D50600190E4F /* QuipperTest */;
+			targetProxy = 533876B920E4D50700190E4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		533876AB20E4D50700190E4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				533876AC20E4D50700190E4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		533876B020E4D50700190E4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				533876B120E4D50700190E4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		533876BF20E4D50700190E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		533876C020E4D50700190E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		533876C220E4D50700190E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuipperTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JacobMao.QuipperTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		533876C320E4D50700190E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuipperTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JacobMao.QuipperTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		533876C520E4D50700190E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuipperTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JacobMao.QuipperTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuipperTest.app/QuipperTest";
+			};
+			name = Debug;
+		};
+		533876C620E4D50700190E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = QuipperTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JacobMao.QuipperTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuipperTest.app/QuipperTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5338769F20E4D50600190E4F /* Build configuration list for PBXProject "QuipperTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533876BF20E4D50700190E4F /* Debug */,
+				533876C020E4D50700190E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		533876C120E4D50700190E4F /* Build configuration list for PBXNativeTarget "QuipperTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533876C220E4D50700190E4F /* Debug */,
+				533876C320E4D50700190E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		533876C420E4D50700190E4F /* Build configuration list for PBXNativeTarget "QuipperTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				533876C520E4D50700190E4F /* Debug */,
+				533876C620E4D50700190E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5338769C20E4D50600190E4F /* Project object */;
+}
