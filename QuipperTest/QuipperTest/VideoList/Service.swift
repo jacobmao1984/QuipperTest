@@ -12,6 +12,8 @@ private let dataUrlStr = "https://gist.githubusercontent.com/sa2dai/04da5a56718b
 
 enum ServiceError: Error {
     case invalidUrl
+    case requestError
+    case invalidDataFormat
 }
 
 enum VideoListResult {
@@ -19,25 +21,39 @@ enum VideoListResult {
     case failed(Error)
 }
 
-struct VideoListService {
-    private let session: URLSession
+protocol VideoListServiceProtocol {
+    func fetchList(_ completion: @escaping (VideoListResult) -> Void) -> Void
+}
 
-    init() {
-        session = URLSession(configuration: .default)
-    }
-
+struct VideoListService: VideoListServiceProtocol {
     func fetchList(_ completion: @escaping (VideoListResult) -> Void) {
         guard let dataURL = URL(string: dataUrlStr) else {
             completion(.failed(ServiceError.invalidUrl))
             return
         }
 
-        session.dataTask(with:dataURL) { (data, response, e) in
-            print("aaa")
+        let fetchTask = URLSession(configuration: .default).dataTask(with:dataURL) { (data, response, e) in
             if let error = e {
                 completion(.failed(error))
                 return
             }
+            
+            guard let httpResponse = response as? HTTPURLResponse,
+                httpResponse.statusCode == 200,
+                let jsonData = data else {
+                    completion(.failed(ServiceError.requestError))
+                    return
+            }
+            
+            let decoder = JSONDecoder()
+            guard let items = try? decoder.decode([VideoListItem].self, from: jsonData) else {
+                completion(.failed(ServiceError.invalidDataFormat))
+                return
+            }
+            
+            completion(.success(items))
         }
+        
+        fetchTask.resume()
     }
 }
