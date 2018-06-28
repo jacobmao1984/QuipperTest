@@ -11,6 +11,8 @@
 		533876AF20E4D50700190E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533876AE20E4D50700190E4F /* Assets.xcassets */; };
 		533876BD20E4D50700190E4F /* QuipperTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533876BC20E4D50700190E4F /* QuipperTestTests.swift */; };
 		533876CD20E4D72500190E4F /* VideoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533876CC20E4D72500190E4F /* VideoListTableViewController.swift */; };
+		533876CF20E4DB6300190E4F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533876CE20E4DB6300190E4F /* Service.swift */; };
+		533876D120E4DBD500190E4F /* VideoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533876D020E4DBD500190E4F /* VideoListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,8 @@
 		533876BC20E4D50700190E4F /* QuipperTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuipperTestTests.swift; sourceTree = "<group>"; };
 		533876BE20E4D50700190E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		533876CC20E4D72500190E4F /* VideoListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoListTableViewController.swift; sourceTree = "<group>"; };
+		533876CE20E4DB6300190E4F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		533876D020E4DBD500190E4F /* VideoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				533876CC20E4D72500190E4F /* VideoListTableViewController.swift */,
+				533876CE20E4DB6300190E4F /* Service.swift */,
+				533876D020E4DBD500190E4F /* VideoListItem.swift */,
 			);
 			path = VideoList;
 			sourceTree = "<group>";
@@ -197,8 +203,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				533876D120E4DBD500190E4F /* VideoListItem.swift in Sources */,
 				533876A820E4D50700190E4F /* AppDelegate.swift in Sources */,
 				533876CD20E4D72500190E4F /* VideoListTableViewController.swift in Sources */,
+				533876CF20E4DB6300190E4F /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
