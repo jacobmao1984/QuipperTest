@@ -14,18 +14,17 @@ class VideoListTableViewCell: UITableViewCell {
     @IBOutlet var presenterNameLabel: UILabel!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descLabel: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+}
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+// MARK: Public Methods
+extension VideoListTableViewCell {
+    func configureForViewMode(_ viewModel: VideoListItemViewModel) {
+        thumbnailImageView.kf.setImage(with: viewModel.imageUrl)
+        durationLabel.text = viewModel.duration
+        presenterNameLabel.text = viewModel.presenter
+        titleLabel.text = viewModel.title
+        descLabel.text = viewModel.desc
     }
-    
 }
 
 extension VideoListTableViewCell: NibLoadableView { }

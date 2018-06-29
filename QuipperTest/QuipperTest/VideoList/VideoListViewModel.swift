@@ -6,7 +6,7 @@
 //  Copyright © 2018 JacobMao. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 private extension TimeInterval {
     var clockRepresentation: String {
@@ -40,6 +40,10 @@ class VideoListViewModel {
     // MARK: Public Properties
     var itemCount: Int {
         return items.count
+    }
+
+    var estimatedRowHeight: CGFloat {
+        return 280
     }
     
     weak var delegate: VideoListViewModelProtocol?
