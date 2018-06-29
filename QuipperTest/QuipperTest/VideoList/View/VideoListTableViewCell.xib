@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="VideoListTableViewCell" id="KGk-i7-Jjw" customClass="VideoListTableViewCell" customModule="QuipperTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="291"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="290.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NZc-gU-1V6" userLabel="ThumbnailImageView">
+                        <rect key="frame" x="16" y="16" width="288" height="169.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="NZc-gU-1V6" secondAttribute="height" multiplier="17:10" id="aSf-zx-ple"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9C-Ng-2zc" userLabel="DurationLabel" customClass="VideoDurationLabel" customModule="QuipperTest" customModuleProvider="target">
+                        <rect key="frame" x="262.5" y="158" width="35.5" height="21.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusValue">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suZ-KD-xUi" userLabel="PresenterNameLabel">
+                        <rect key="frame" x="16" y="193.5" width="288" height="16"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgz-dm-n18" userLabel="TitleLabel">
+                        <rect key="frame" x="16" y="229" width="288" height="20.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTL-Sb-F2E" userLabel="DescLabel">
+                        <rect key="frame" x="16" y="257.5" width="288" height="17"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.44818765859999998" green="0.44818765859999998" blue="0.44818765859999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Sgz-dm-n18" firstAttribute="top" secondItem="suZ-KD-xUi" secondAttribute="bottom" constant="20" id="0CE-6b-1jX"/>
+                    <constraint firstAttribute="trailing" secondItem="Sgz-dm-n18" secondAttribute="trailing" constant="16" id="7z9-9a-Pny"/>
+                    <constraint firstItem="Sgz-dm-n18" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8yv-N8-9HJ"/>
+                    <constraint firstAttribute="bottom" secondItem="sTL-Sb-F2E" secondAttribute="bottom" constant="16" id="AcI-cB-Smd"/>
+                    <constraint firstItem="sTL-Sb-F2E" firstAttribute="top" secondItem="Sgz-dm-n18" secondAttribute="bottom" constant="8" id="Gqj-SP-i5O"/>
+                    <constraint firstItem="L9C-Ng-2zc" firstAttribute="bottom" secondItem="NZc-gU-1V6" secondAttribute="bottom" constant="-6" id="JC2-UH-gwM"/>
+                    <constraint firstItem="suZ-KD-xUi" firstAttribute="top" secondItem="NZc-gU-1V6" secondAttribute="bottom" constant="8" id="JMT-8p-ees"/>
+                    <constraint firstItem="NZc-gU-1V6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Jzd-Kh-mr2"/>
+                    <constraint firstItem="NZc-gU-1V6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Kdt-nV-W2E"/>
+                    <constraint firstItem="suZ-KD-xUi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="LVA-yR-E4l"/>
+                    <constraint firstItem="sTL-Sb-F2E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Mtk-mm-h7m"/>
+                    <constraint firstAttribute="trailing" secondItem="NZc-gU-1V6" secondAttribute="trailing" constant="16" id="Wcd-Is-pSL"/>
+                    <constraint firstAttribute="trailing" secondItem="sTL-Sb-F2E" secondAttribute="trailing" constant="16" id="anA-TM-IHd"/>
+                    <constraint firstItem="NZc-gU-1V6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="dgN-Di-ezp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="L9C-Ng-2zc" secondAttribute="trailing" constant="6" id="l9m-i0-Ikw"/>
+                    <constraint firstAttribute="trailing" secondItem="suZ-KD-xUi" secondAttribute="trailing" constant="16" id="vu0-zW-ruY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="descLabel" destination="sTL-Sb-F2E" id="eGj-45-q1F"/>
+                <outlet property="durationLabel" destination="L9C-Ng-2zc" id="4TP-ee-Iw0"/>
+                <outlet property="presenterNameLabel" destination="suZ-KD-xUi" id="VHe-QB-1kq"/>
+                <outlet property="thumbnailImageView" destination="NZc-gU-1V6" id="G1K-AG-XhY"/>
+                <outlet property="titleLabel" destination="Sgz-dm-n18" id="Mrl-6Y-fkw"/>
+            </connections>
+            <point key="canvasLocation" x="-73" y="50.5"/>
+        </tableViewCell>
+    </objects>
+</document>
