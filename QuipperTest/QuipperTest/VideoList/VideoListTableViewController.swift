@@ -10,6 +10,9 @@ import UIKit
 
 class VideoListTableViewController: UITableViewController {
 
+    // MARK: Public Properties
+    var cellForTransition: VideoListTableViewCell?
+    
     // MARK: Private Properties
     private let viewModel: VideoListViewModel
 
@@ -30,13 +33,17 @@ class VideoListTableViewController: UITableViewController {
         super.viewDidLoad()
 
         tableView.estimatedRowHeight = viewModel.estimatedRowHeight
-
         tableView.register(VideoListTableViewCell.self)
+        
+        // For removing blank cell
+        tableView.tableFooterView = UIView()
         
         viewModel.fetchData()
     }
 
-
+    override var shouldAutorotate: Bool {
+        return false
+    }
 }
 
 // MARK: UITableViewDataSource
@@ -59,6 +66,31 @@ extension VideoListTableViewController {
     }
 }
 
+// MARK: UITableViewDelegate
+extension VideoListTableViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Because demo video is gone, we have to use a fixed url
+        let videoUrl = URL(string: "https://recruit-a.akamaihd.net/rtmp/o1/4477599122001/4477599122001_4803584821001_4801290231001.mp4?pubId=4477599122001&videoId=4801290231001")!
+        let vm = VideoPlayViewControllerViewModel(videoUrl: videoUrl)
+        let vc = VideoPlayViewController(viewModel: vm)
+        vc.modalPresentationStyle = .custom
+        vc.modalPresentationCapturesStatusBarAppearance = true
+        
+        
+        if let selectedCell = tableView.cellForRow(at: indexPath) as? VideoListTableViewCell {
+            cellForTransition = selectedCell
+            vc.transitioningDelegate = self
+        } else {
+            cellForTransition = nil
+        }
+
+        // https://stackoverflow.com/questions/21075540/presentviewcontrolleranimatedyes-view-will-not-appear-until-user-taps-again/30787046#30787046
+        DispatchQueue.main.async {
+            self.present(vc, animated: true, completion: nil)
+        }
+    }
+}
+
 // MARK: VideoListViewModelProtocol
 extension VideoListTableViewController: VideoListViewModelProtocol {
     func videoListViewModelDidUpdateData(_ viewModel: VideoListViewModel) {
@@ -66,12 +98,25 @@ extension VideoListTableViewController: VideoListViewModelProtocol {
     }
     
     func videoListViewModelUpdateDataFailed(_ error: Error) {
-        let errorAlert = UIAlertController(title: nil,
-                                           message: error.localizedDescription,
-                                           preferredStyle: .alert)
-        errorAlert.addAction(UIAlertAction(title: "OK",
-                                           style: .default,
-                                           handler: nil))
-        present(errorAlert, animated: true, completion: nil)
+        showMessage(error.localizedDescription)
     }
 }
+
+// MARK: UIViewControllerTransitioningDelegate
+extension VideoListTableViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController,
+                             presenting: UIViewController,
+                             source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return VideoPlayViewPresentAnimation()
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        guard let playVC = dismissed as? VideoPlayViewController else {
+            return nil
+        }
+        
+        return VideoPlayViewDismissAnimation(videoScreenshot: playVC.getCurrentVideoScreenshot())
+    }
+}
+
+extension VideoListTableViewController: ShowMessageProtocol {}

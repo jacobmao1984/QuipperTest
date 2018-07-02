@@ -27,7 +27,7 @@
                             <constraint firstAttribute="width" secondItem="NZc-gU-1V6" secondAttribute="height" multiplier="17:10" id="aSf-zx-ple"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9C-Ng-2zc" userLabel="DurationLabel" customClass="VideoDurationLabel" customModule="QuipperTest" customModuleProvider="target">
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9C-Ng-2zc" userLabel="DurationLabel" customClass="VideoDurationLabel" customModule="QuipperTest" customModuleProvider="target">
                         <rect key="frame" x="262.5" y="158" width="35.5" height="21.5"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>

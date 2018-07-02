@@ -8,10 +8,10 @@
 
 import UIKit
 
-private extension TimeInterval {
+extension TimeInterval {
     var clockRepresentation: String {
-        if self <= 0 {
-            return "0 : 0"
+        if self <= 0 || isNaN {
+            return "0:0"
         }
 
         let ms = Int(self)
@@ -19,7 +19,7 @@ private extension TimeInterval {
         let sec = ms / 1000 % 60
         let min = ms / 1000 / 60
 
-        return "\(min) : \(sec)"
+        return "\(min):\(sec)"
     }
 }
 

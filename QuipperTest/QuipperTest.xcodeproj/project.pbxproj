@@ -16,12 +16,18 @@
 		534F097220E5C59B00FEAB6F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F097020E5C59B00FEAB6F /* Request.swift */; };
 		534F097420E5C5A300FEAB6F /* VideoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F097320E5C5A300FEAB6F /* VideoListViewModel.swift */; };
 		534F097620E5C5AA00FEAB6F /* LocalResponse.txt in Resources */ = {isa = PBXBuildFile; fileRef = 534F097520E5C5AA00FEAB6F /* LocalResponse.txt */; };
-		534F098020E5D00A00FEAB6F /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F097E20E5D00A00FEAB6F /* UITableView+Extension.swift */; };
-		534F098120E5D00A00FEAB6F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F097F20E5D00A00FEAB6F /* UIView+Extension.swift */; };
 		534F098420E5D02A00FEAB6F /* VideoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F098220E5D02A00FEAB6F /* VideoListTableViewCell.swift */; };
 		534F098520E5D02A00FEAB6F /* VideoListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 534F098320E5D02A00FEAB6F /* VideoListTableViewCell.xib */; };
 		534F098720E5D05300FEAB6F /* VideoDurationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F098620E5D05300FEAB6F /* VideoDurationLabel.swift */; };
 		534F098C20E5D5CF00FEAB6F /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534F098B20E5D5CF00FEAB6F /* Kingfisher.framework */; };
+		53A9794620E9BD6A00B5F863 /* VideoPlayViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9794520E9BD6A00B5F863 /* VideoPlayViewControllerViewModel.swift */; };
+		53A9794920E9BE6300B5F863 /* VideoPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53A9794720E9BE6300B5F863 /* VideoPlayViewController.xib */; };
+		53A9794A20E9BE6300B5F863 /* VideoPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9794820E9BE6300B5F863 /* VideoPlayViewController.swift */; };
+		53A9794D20E9BE9C00B5F863 /* UIViewController+Extensiion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9794C20E9BE9C00B5F863 /* UIViewController+Extensiion.swift */; };
+		53A9794F20E9BEC700B5F863 /* VideoPlayViewControllerGestureProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9794E20E9BEC700B5F863 /* VideoPlayViewControllerGestureProxy.swift */; };
+		53A9795120E9BF3B00B5F863 /* VideoPlayViewTransitionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9795020E9BF3B00B5F863 /* VideoPlayViewTransitionAnimation.swift */; };
+		53A9795420E9BF8100B5F863 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9795220E9BF8100B5F863 /* UITableView+Extension.swift */; };
+		53A9795520E9BF8100B5F863 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A9795320E9BF8100B5F863 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,12 +54,18 @@
 		534F097020E5C59B00FEAB6F /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		534F097320E5C5A300FEAB6F /* VideoListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoListViewModel.swift; sourceTree = "<group>"; };
 		534F097520E5C5AA00FEAB6F /* LocalResponse.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LocalResponse.txt; sourceTree = "<group>"; };
-		534F097E20E5D00A00FEAB6F /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
-		534F097F20E5D00A00FEAB6F /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		534F098220E5D02A00FEAB6F /* VideoListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoListTableViewCell.swift; sourceTree = "<group>"; };
 		534F098320E5D02A00FEAB6F /* VideoListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoListTableViewCell.xib; sourceTree = "<group>"; };
 		534F098620E5D05300FEAB6F /* VideoDurationLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDurationLabel.swift; sourceTree = "<group>"; };
 		534F098B20E5D5CF00FEAB6F /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		53A9794520E9BD6A00B5F863 /* VideoPlayViewControllerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayViewControllerViewModel.swift; sourceTree = "<group>"; };
+		53A9794720E9BE6300B5F863 /* VideoPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayViewController.xib; sourceTree = "<group>"; };
+		53A9794820E9BE6300B5F863 /* VideoPlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayViewController.swift; sourceTree = "<group>"; };
+		53A9794C20E9BE9C00B5F863 /* UIViewController+Extensiion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensiion.swift"; sourceTree = "<group>"; };
+		53A9794E20E9BEC700B5F863 /* VideoPlayViewControllerGestureProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayViewControllerGestureProxy.swift; sourceTree = "<group>"; };
+		53A9795020E9BF3B00B5F863 /* VideoPlayViewTransitionAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayViewTransitionAnimation.swift; sourceTree = "<group>"; };
+		53A9795220E9BF8100B5F863 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		53A9795320E9BF8100B5F863 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,8 @@
 		533876A620E4D50600190E4F /* QuipperTest */ = {
 			isa = PBXGroup;
 			children = (
+				53A9794B20E9BE9C00B5F863 /* Extension */,
+				53A9794420E9BD6A00B5F863 /* VideoPlayer */,
 				533876CB20E4D72500190E4F /* VideoList */,
 				533876A720E4D50600190E4F /* AppDelegate.swift */,
 				533876AE20E4D50700190E4F /* Assets.xcassets */,
@@ -123,6 +137,7 @@
 				533876CC20E4D72500190E4F /* VideoListTableViewController.swift */,
 				533876D020E4DBD500190E4F /* VideoListItem.swift */,
 				534F097320E5C5A300FEAB6F /* VideoListViewModel.swift */,
+				53A9795020E9BF3B00B5F863 /* VideoPlayViewTransitionAnimation.swift */,
 			);
 			path = VideoList;
 			sourceTree = "<group>";
@@ -142,8 +157,6 @@
 				534F098620E5D05300FEAB6F /* VideoDurationLabel.swift */,
 				534F098220E5D02A00FEAB6F /* VideoListTableViewCell.swift */,
 				534F098320E5D02A00FEAB6F /* VideoListTableViewCell.xib */,
-				534F097E20E5D00A00FEAB6F /* UITableView+Extension.swift */,
-				534F097F20E5D00A00FEAB6F /* UIView+Extension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,6 +167,27 @@
 				534F098B20E5D5CF00FEAB6F /* Kingfisher.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53A9794420E9BD6A00B5F863 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				53A9794E20E9BEC700B5F863 /* VideoPlayViewControllerGestureProxy.swift */,
+				53A9794820E9BE6300B5F863 /* VideoPlayViewController.swift */,
+				53A9794720E9BE6300B5F863 /* VideoPlayViewController.xib */,
+				53A9794520E9BD6A00B5F863 /* VideoPlayViewControllerViewModel.swift */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
+		53A9794B20E9BE9C00B5F863 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				53A9795220E9BF8100B5F863 /* UITableView+Extension.swift */,
+				53A9795320E9BF8100B5F863 /* UIView+Extension.swift */,
+				53A9794C20E9BE9C00B5F863 /* UIViewController+Extensiion.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A9794920E9BE6300B5F863 /* VideoPlayViewController.xib in Resources */,
 				533876AF20E4D50700190E4F /* Assets.xcassets in Resources */,
 				534F098520E5D02A00FEAB6F /* VideoListTableViewCell.xib in Resources */,
 			);
@@ -276,15 +311,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A9794A20E9BE6300B5F863 /* VideoPlayViewController.swift in Sources */,
+				53A9794F20E9BEC700B5F863 /* VideoPlayViewControllerGestureProxy.swift in Sources */,
 				534F098720E5D05300FEAB6F /* VideoDurationLabel.swift in Sources */,
+				53A9795520E9BF8100B5F863 /* UIView+Extension.swift in Sources */,
 				533876D120E4DBD500190E4F /* VideoListItem.swift in Sources */,
 				533876A820E4D50700190E4F /* AppDelegate.swift in Sources */,
-				534F098120E5D00A00FEAB6F /* UIView+Extension.swift in Sources */,
-				534F098020E5D00A00FEAB6F /* UITableView+Extension.swift in Sources */,
 				534F097420E5C5A300FEAB6F /* VideoListViewModel.swift in Sources */,
+				53A9795120E9BF3B00B5F863 /* VideoPlayViewTransitionAnimation.swift in Sources */,
 				534F097220E5C59B00FEAB6F /* Request.swift in Sources */,
 				534F097120E5C59B00FEAB6F /* Client.swift in Sources */,
+				53A9795420E9BF8100B5F863 /* UITableView+Extension.swift in Sources */,
 				534F098420E5D02A00FEAB6F /* VideoListTableViewCell.swift in Sources */,
+				53A9794D20E9BE9C00B5F863 /* UIViewController+Extensiion.swift in Sources */,
+				53A9794620E9BD6A00B5F863 /* VideoPlayViewControllerViewModel.swift in Sources */,
 				533876CD20E4D72500190E4F /* VideoListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TC447U8226;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -451,6 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TC447U8226;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
