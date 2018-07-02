@@ -18,3 +18,6 @@ In the video player view, I added some ux/ui:
 
 I also added a couple of transition when you present or dismiss video player view.
 There are a lot of way that can force landscape, but I took a more custom way.
+
+I added some testcases to test video list's model and view model.
+
