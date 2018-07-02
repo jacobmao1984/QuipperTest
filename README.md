@@ -21,3 +21,6 @@ There are a lot of way that can force landscape, but I took a more custom way.
 
 I added some testcases to test video list's model and view model.
 
+Because the video list's performance is ok, I didn't do more optimization for it.
+I have another Repository that is about how to optimize the ui performance:
+https://github.com/JacobMao/UIPerformanceDemo
