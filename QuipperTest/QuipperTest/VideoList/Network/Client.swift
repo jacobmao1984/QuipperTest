@@ -2,7 +2,7 @@
 //  Client.swift
 //  QuipperTest
 //
-//  Created by ST21073 on 2018/06/29.
+//  Created by Jacob Mao on 2018/06/29.
 //  Copyright © 2018 JacobMao. All rights reserved.
 //
 
